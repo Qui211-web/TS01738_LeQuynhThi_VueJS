@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 - Bài 1 Carousel</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome ICON (BẮT BUỘC PHẢI CÓ) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .bg-pink {
+            background-color: #eaf4f8;
+        }
+        .navbar-nav .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+        }
+        .navbar-nav .nav-link i {
+            margin-right: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-sm bg-pink border-bottom">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo-energy-pilates.png" style="width:150px">
+        </a>
+
+        <!-- TOGGLER -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse align-items-center" id="mainMenu">
+
+            <!-- MENU TRÁI -->
+            <ul class="navbar-nav ms-3">
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <i class="fa-solid fa-list"></i> Bài viết
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <i class="fa-solid fa-film"></i> Video
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <i class="fa-solid fa-circle-info"></i> Giới thiệu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <i class="fa-solid fa-calendar-days"></i> Sự kiện
+                    </a>
+                </li>
+
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                       href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user"></i> Tài khoản
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-key"></i> Quên mật khẩu
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-user-plus"></i> Đăng ký
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- NGÔN NGỮ PHẢI -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link">Tiếng Việt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Tiếng Anh</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- ================= CAROUSEL (CÓ VIỀN HAI BÊN) ================= -->
+<div class="container p-0">
+
+    <div id="energyCarousel" class="carousel slide border" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner3.jpg" class="d-block w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#energyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#energyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
