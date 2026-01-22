@@ -1,0 +1,87 @@
+:root {
+  --green-main: #2f855a;
+  --green-soft: #9ae6b4;
+  --green-accent: #38b2ac;
+  --bg-main: #f0fff4;
+  --text-main: #2d3748;
+  --border-soft: #c6f6d5;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* TITLE */
+.section-title {
+  color: var(--green-main);
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 35px rgba(47, 133, 90, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* PRICE */
+.price {
+  color: var(--green-main);
+  font-weight: 600;
+}
+
+:root {
+  --green-main: #2f855a;
+  --green-soft: #9ae6b4;
+  --green-accent: #38b2ac;
+  --bg-main: #f0fff4;
+  --text-main: #2d3748;
+}
+
+/* BUTTON DÙNG CHUNG */
+.btn-green {
+  background: linear-gradient(135deg, #9ae6b4, #2f855a);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-green:hover {
+  opacity: 0.9;
+}
+
+
+/* NAVBAR */
+.navbar-brand {
+  color: var(--green-main) !important;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f0fff4 0%,
+    #e6fffa 100%
+  );
+  color: var(--text-main);
+}
+
+.project-img {
+  height: 220px;        /* cố định chiều cao */
+  width: 100%;
+  object-fit: cover;   /* cắt ảnh cho đều */
+}
+
